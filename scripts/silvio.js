@@ -21,7 +21,7 @@ module.exports = function(robot) {
     msg.send(messageData)
   })
 
-  robot.hear(/\b(escolh[o|i]|decidiu?)\b/i, function(msg) {
+  robot.hear(/\b(escolh[o|i]|decidiu?|vou comprar|vou vender)\b/i, function(msg) {
     var r_text = 'Está certo disso?'
     var messageData = defaultData
     messageData.channel = msg.message.room
