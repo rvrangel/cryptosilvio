@@ -20,6 +20,14 @@ module.exports = function(robot) {
     messageData.text = r_text
     msg.send(messageData)
   })
+
+  robot.hear(/\b(escolh[o|i]|decid[i|iu])\b/i, function(msg) {
+    var r_text = 'Está certo disso?'
+    var messageData = defaultData
+    messageData.channel = msg.message.room
+    messageData.text = r_text
+    msg.send(messageData)
+  })  
   
   robot.respond(/.*\b(obrigad[o|a]|valeu)\b/i, function(msg) {
     replies = [
