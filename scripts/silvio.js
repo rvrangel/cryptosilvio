@@ -4,7 +4,8 @@ module.exports = function(robot) {
   var defaultData = {
     username: 'Crypto Silvio',
     icon_url: 'http://i.imgur.com/KKtEayV.jpg',
-    as_user: false
+    as_user: false,
+    unfurl_media: true
   };
   
   function sendMessage(msg, r_text) {

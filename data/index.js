@@ -13,6 +13,35 @@ module.exports = [{
     'de nada',
     'pode crer',
     'no problem',
-    'tranqs'
+    'tranqs',
+    'show'
   ]
+},{
+  action: 'respond',
+  trigger: /.*\bcomprar\b.*\?/i,
+  replies: [
+    'se joga',
+    'hmmmm, melhor não',
+    'não vem querer comprar migalha',
+    'só se for barras de ouro que valem mais do que dinheiro!',
+    'COMPRA!!'
+  ]
+},{
+  action: 'respond',
+  trigger: /.*\bvender\b.*\?/i,
+  replies: [
+    'vender? jamais!!',
+    'não quer pedir ajuda para os universitários?',
+    'não deixo',
+    'soca bala',
+    'tu sabe que vai subir depois que tu vender né?'
+  ]
+},{
+  action: 'hear',
+  trigger: /\bperd(i|eu)\b.*\b(dinheiro|pilas?)\b/i,
+  replies: ['<https://media.giphy.com/media/gUfc2d1J9o6go/giphy.gif>']
+},{
+  action: 'hear',
+  trigger: /\bouro\b/i,
+  replies: ['<https://media.giphy.com/media/wb6xgCSpLl0m4/giphy.gif>']
 }];
