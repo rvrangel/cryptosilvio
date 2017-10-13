@@ -44,4 +44,8 @@ module.exports = [{
   action: 'hear',
   trigger: /\bouro\b/i,
   replies: ['<https://media.giphy.com/media/wb6xgCSpLl0m4/giphy.gif>']
+},{
+  action: 'hear',
+  trigger: /\bcaindo\b/i,
+  replies: ['a pipa do vovô não sobe mais! hahae!']
 }];
